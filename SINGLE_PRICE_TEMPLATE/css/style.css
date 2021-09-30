@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url("/SINGLE_PRICE_TEMPLATE/images/f.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.full-card{
+    position: relative;
+    text-align: center; 
+}
+.card{
+    width: 800px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , 20%);
+    border: none;
+    border-radius: 5px;
+}
+.card .title{
+    padding-top: 20px;
+    padding-left: 40px;
+    text-align: start;
+    padding-bottom: 30px;
+    background: url("/SINGLE_PRICE_TEMPLATE/images/6.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.card .title h3{
+
+    color: #3babad;
+    font-size: 17pt;
+}
+.card .title h4{
+    color: #45c2ce;
+    margin-top: 20px;
+    font-size: 12pt;
+}
+.card .title p{
+    font-weight: 300;
+    margin-top: 10px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    color: #fff;
+}
+.grid-1{
+    padding-top: 40px;
+    text-align: start;
+    padding-left: 40px;
+    background-color: #2697d1;
+}
+
+.grid-1 h4 , .grid-2 h4{
+    font-size: 12pt;
+    font-weight: 500;
+}
+.grid-1 p{
+    margin-top: 15px;
+}
+.grid-1 p span:first-child{
+    font-size: 17pt;
+    font-weight: 500;
+}
+.grid-1 p span:nth-child(2){
+    font-size: 10pt;
+    font-weight: 200;
+}
+.grid-1 p:nth-child(3){
+    font-size: 10.5pt;
+    font-weight: 400;
+}
+.grid-1 .btn{
+    margin-top: 40px;
+    height: 40px;
+    width: 150px;
+    background-color: #0078bf ;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 12pt;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.grid-1 .btn:hover{
+    opacity: 70%;
+    transition: .3s;
+}
+.grid-2{
+    padding-top: 40px;
+    text-align: start;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    background-color: #8f74e9;
+}
+.grid-2 .pg{
+    padding-top: 20px;
+    width: 70%;
+}
+.grid-2 .pg p{
+    font-weight: 200;
+}
+@media (max-width:768px) {
+    .card{
+        width: auto;
+        height: 800px;
+    }
+}
